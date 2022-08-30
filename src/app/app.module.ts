@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    DetailComponent
+    DetailComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
