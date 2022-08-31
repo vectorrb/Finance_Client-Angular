@@ -11,9 +11,13 @@ export class ProductService {
   url:string="https://localhost:44376/api/";
   constructor(private http:HttpClient) { }
 
+
+  //returns all products from database
   getProducts():Observable<any>{
     return this.http.get<any>(this.url+"product");
   }
+
+  //returns product details by productId
   getProductbyId(id:number):Observable<any>{
     return this.http.get<any>(this.url+"product/all/"+id);
   }
